@@ -20,6 +20,10 @@
     <h1>DOGS APP</h1>
 
     <section class="container">
+
+        <span id="error"></span>
+
+
         <article>
             <img id="img1" class="image" alt="Random Dogs Pictures">
             <button type="button" class="random-dog-button">Guardar en Favoritos</button>
@@ -30,12 +34,7 @@
             <button type="button" class="random-dog-button">Guardar en Favoritos</button>
         </article>
 
-        <article>
-            <img id="img3" class="image" alt="Random Dogs Pictures">
-            <button type="button" class="random-dog-button">Guardar en Favoritos</button>
-        </article>
-
-        <button type="button" class=" random-dog-button" onclick="reload()">Recargar</button>
+        <button type="button" class=" random-dog-button" onclick="loadRandomDogs()">Recargar</button>
         
         <section id="myFavorites">
             <h2>Perros Favoritos</h2>
