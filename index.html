@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +11,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Square+Peg&display=swap" rel="stylesheet">
     <title>Random Dog with API REST</title>
 </head>
-<body> 
+
+<body>
     <header>
         <h1>Random Dogs</h1>
     </header>
+
+    <h1>DOGS APP</h1>
+
     <section class="container">
-        <img id="img1" class="image" alt="Random Dogs Pictures">
-        <img id="img2" class="image" alt="Random Dogs Pictures">
-        <img id="img3" class="image" alt="Random Dogs Pictures">
+        <article>
+            <img id="img1" class="image" alt="Random Dogs Pictures">
+            <button type="button" class="random-dog-button">Guardar en Favoritos</button>
+        </article>
 
-        <button type="button" class="random-dog-button">Show me the dog</button>
+        <article>
+            <img id="img2" class="image" alt="Random Dogs Pictures">
+            <button type="button" class="random-dog-button">Guardar en Favoritos</button>
+        </article>
+
+        <article>
+            <img id="img3" class="image" alt="Random Dogs Pictures">
+            <button type="button" class="random-dog-button">Guardar en Favoritos</button>
+        </article>
+
+        <button type="button" class=" random-dog-button" onclick="reload()">Recargar</button>
+        
+        <section id="myFavorites">
+            <h2>Perros Favoritos</h2>
+            <article>
+                <img id=img1 width="150" alt="foto de perro favorito">
+                <button>Sacar al perro favorito</button>
+            </article>
+        </section>
     </section>
+        
+        <script src="main.js"></script>
+    </body>
 
-    <script src="main.js"></script>
-</body>
 </html>
